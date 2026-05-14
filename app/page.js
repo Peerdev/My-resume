@@ -24,6 +24,11 @@ const skills = [
       "Node.js, Express, REST APIs, authentication, PostgreSQL, Redis, background jobs.",
   },
   {
+    title: "Mobile",
+    description:
+      "Capacitor (Android/iOS), push notifications (FCM), in-app browser flows, Kotlin Multiplatform (KMP), Flutter fundamentals.",
+  },
+  {
     title: "Cloud & DevOps",
     description:
       "Docker, CI/CD, deployment pipelines, monitoring, logging, scalable infrastructure.",
@@ -36,6 +41,24 @@ const skills = [
 ];
 
 const projects = [
+  {
+    tag: "Fintech Mobile App",
+    year: "2026",
+    title: "CidiPay Mobile (Android/iOS)",
+    description:
+      "Built and shipped a mobile wallet app with deposits, transfers, P2P trading chat, escrow flows, and in-app KYC verification—focused on polished UX, real-time updates, and reliable transaction handling.",
+    link: "https://www.cidipay.com",
+    stack: [
+      "React",
+      "Capacitor",
+      "Tailwind CSS",
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+      "Socket.IO",
+      "Firebase (FCM)"
+    ],
+  },
   {
     tag: "SaaS Platform",
     year: "2026",
@@ -90,7 +113,12 @@ export default function HomePage() {
     <div className="page-shell">
       <header className="site-header">
         <a className="brand" href="#home">
-          Anthony Mekwunye
+          <img
+            className="brand-avatar"
+            src="/profile.jpg"
+            alt="Anthony Mekwunye"
+          />
+          <span>Anthony Mekwunye</span>
         </a>
         <nav className="site-nav" aria-label="Main navigation">
           {navItems.map((item) => (
@@ -211,6 +239,16 @@ export default function HomePage() {
                 </div>
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
+                {project.link ? (
+                  <a
+                    className="project-link"
+                    href={project.link}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    www.cidipay.com
+                  </a>
+                ) : null}
                 <ul className="project-stack">
                   {project.stack.map((item) => (
                     <li key={item}>{item}</li>
