@@ -130,6 +130,23 @@ export default function HomePage() {
         <a className="nav-cta" href="#contact">
           Hire Me
         </a>
+        <details className="mobile-nav">
+          <summary className="mobile-nav-trigger" aria-label="Open navigation menu">
+            Menu
+          </summary>
+          <div className="mobile-nav-panel glass-card" role="dialog" aria-label="Mobile navigation">
+            <nav className="mobile-nav-links" aria-label="Mobile navigation links">
+              {navItems.map((item) => (
+                <a key={item.href} href={item.href}>
+                  {item.label}
+                </a>
+              ))}
+              <a className="mobile-nav-cta" href="#contact">
+                Hire Me
+              </a>
+            </nav>
+          </div>
+        </details>
       </header>
 
       <main id="home">

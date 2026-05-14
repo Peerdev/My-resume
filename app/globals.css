@@ -110,6 +110,58 @@ a {
   color: var(--muted);
 }
 
+.mobile-nav {
+  display: none;
+  position: relative;
+}
+
+.mobile-nav-trigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.72rem 1rem;
+  border-radius: 999px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--border);
+  color: var(--text);
+  cursor: pointer;
+  user-select: none;
+}
+
+.mobile-nav-trigger::-webkit-details-marker {
+  display: none;
+}
+
+.mobile-nav-panel {
+  position: absolute;
+  top: calc(100% + 0.85rem);
+  right: 0;
+  width: min(92vw, 360px);
+  padding: 0.9rem;
+  z-index: 60;
+}
+
+.mobile-nav-links {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.mobile-nav-links a {
+  padding: 0.9rem 1rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.mobile-nav-cta {
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--primary), #a0f0ff);
+  color: #07111f;
+  border: none;
+}
+
 .site-nav a:hover,
 .contact-links a:hover {
   color: var(--text);
@@ -188,6 +240,7 @@ a {
   color: var(--primary);
   font-weight: 700;
   letter-spacing: 0.01em;
+  overflow-wrap: anywhere;
 }
 
 .project-link:hover {
@@ -433,14 +486,27 @@ a {
   }
 
   .site-header {
-    flex-wrap: wrap;
-    justify-content: center;
+    top: 0.75rem;
+    padding: 0.85rem 1rem;
   }
 
   .site-nav {
-    order: 3;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: none;
+  }
+
+  .nav-cta {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+
+  .brand span {
+    max-width: 52vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .hero {
@@ -466,5 +532,11 @@ a {
   .button,
   .nav-cta {
     width: 100%;
+  }
+
+  .mobile-nav-panel {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
   }
 }
