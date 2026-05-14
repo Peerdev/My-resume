@@ -7,7 +7,7 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Alex Morgan | Software Engineer",
+  title: "Anthony Mekwunye | Software Engineer",
   description:
     "Software engineering portfolio for a full-stack engineer focused on building reliable, scalable, and user-centered products.",
 };
