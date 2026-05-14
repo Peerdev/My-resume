@@ -90,19 +90,19 @@ const experience = [
     role: "Senior Software Engineer",
     period: "2024 — Present",
     description:
-      "Leading feature delivery, architecture decisions, and technical collaboration on product initiatives serving growing user needs.",
+      "Leading feature delivery, architecture decisions, and technical collaboration on product initiatives serving growing user needs at Cidipay.",
   },
   {
-    role: "Software Engineer",
-    period: "2022 — 2024",
+    role: "Technical Support Engineer",
+    period: "2022 — 2026",
     description:
-      "Shipped frontend and backend features, optimized performance, and supported production systems with a strong focus on quality.",
+      "• Provide front-line technical support for Microsoft Dynamics 365 CRM, handling configuration, integration, data migration, and performance troubleshooting.\n• Investigate customer-reported issues to identify root causes and recommend fixes aligned to product and platform best practices.",
   },
   {
-    role: "Junior Developer",
+    role: "Technical Support Specialist",
     period: "2021 — 2022",
     description:
-      "Built foundational product features, fixed bugs, and learned to work effectively within collaborative engineering workflows.",
+      "•	Delivered end-user support for hardware and software issues via phone, email, and in-person assistance to minimize downtime",
   },
 ];
 
@@ -115,7 +115,7 @@ export default function HomePage() {
         <a className="brand" href="#home">
           <img
             className="brand-avatar"
-            src="/profile.jpg"
+            src="/img/profile.jpeg"
             alt="Anthony Mekwunye"
           />
           <span>Anthony Mekwunye</span>

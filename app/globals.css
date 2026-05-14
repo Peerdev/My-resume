@@ -176,6 +176,10 @@ a {
   line-height: 1.75;
 }
 
+.timeline-item p {
+  white-space: pre-line;
+}
+
 .project-link {
   display: inline-flex;
   align-items: center;
