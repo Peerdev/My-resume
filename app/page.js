@@ -312,7 +312,9 @@ export default function HomePage() {
               <a href="https://www.linkedin.com/in/anthony-mekwunye-68a265237/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BvZROc1qXQC6zHizoyQSaZg%3D%3D" target="_blank" rel="noreferrer">
                 LinkedIn
               </a>
-              <a href="#">Resume Link</a>
+              <a href="/resume.pdf" target="_blank" rel="noreferrer">
+                Resume (PDF)
+              </a>
             </div>
           </div>
         </section>
