@@ -305,7 +305,7 @@ export default function HomePage() {
               </p>
             </div>
             <div className="contact-links">
-              <a href="mailto:alex@example.com">anthonymekwunye95@gmail.com</a>
+              <a href="mailto:anthonymekwunye95@gmail.com">Email</a>
               <a href="https://github.com/" target="_blank" rel="noreferrer">
                 GitHub
               </a>
