@@ -300,8 +300,7 @@ export default function HomePage() {
               <p className="eyebrow">Contact</p>
               <h2>Let’s build something valuable together.</h2>
               <p>
-                Replace these placeholders with your real email, GitHub, LinkedIn, and resume link
-                before publishing.
+                
               </p>
             </div>
             <div className="contact-links">
