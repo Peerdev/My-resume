@@ -7,7 +7,7 @@ const navItems = [
 ];
 
 const metrics = [
-  { value: "4+", label: "Years building production software" },
+  { value: "10+", label: "Years building production software" },
   { value: "12", label: "Projects launched across web and API systems" },
   { value: "99.9%", label: "Reliability mindset for modern platforms" },
 ];
